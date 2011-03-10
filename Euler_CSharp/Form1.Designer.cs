@@ -27,72 +27,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.Euler3Button = new System.Windows.Forms.Button();
-			this.ResultLabel = new System.Windows.Forms.Label();
-			this.TimingLabel = new System.Windows.Forms.Label();
-			this.Euler4Button = new System.Windows.Forms.Button();
-			this.SuspendLayout();
-			// 
-			// Euler3Button
-			// 
-			this.Euler3Button.Location = new System.Drawing.Point(2, 37);
-			this.Euler3Button.Name = "Euler3Button";
-			this.Euler3Button.Size = new System.Drawing.Size(75, 23);
-			this.Euler3Button.TabIndex = 0;
-			this.Euler3Button.Text = "Euler3";
-			this.Euler3Button.UseVisualStyleBackColor = true;
-			this.Euler3Button.Click += new System.EventHandler(this.Euler3Button_Click);
-			// 
-			// ResultLabel
-			// 
-			this.ResultLabel.AutoSize = true;
-			this.ResultLabel.Location = new System.Drawing.Point(121, 42);
-			this.ResultLabel.Name = "ResultLabel";
-			this.ResultLabel.Size = new System.Drawing.Size(45, 13);
-			this.ResultLabel.TabIndex = 1;
-			this.ResultLabel.Text = "Results:";
-			// 
-			// TimingLabel
-			// 
-			this.TimingLabel.AutoSize = true;
-			this.TimingLabel.Location = new System.Drawing.Point(121, 64);
-			this.TimingLabel.Name = "TimingLabel";
-			this.TimingLabel.Size = new System.Drawing.Size(41, 13);
-			this.TimingLabel.TabIndex = 2;
-			this.TimingLabel.Text = "Timing:";
-			// 
-			// Euler4Button
-			// 
-			this.Euler4Button.Location = new System.Drawing.Point(2, 76);
-			this.Euler4Button.Name = "Euler4Button";
-			this.Euler4Button.Size = new System.Drawing.Size(75, 23);
-			this.Euler4Button.TabIndex = 3;
-			this.Euler4Button.Text = "Euler 4";
-			this.Euler4Button.UseVisualStyleBackColor = true;
-			this.Euler4Button.Click += new System.EventHandler(this.Euler4Button_Click);
-			// 
-			// Form1
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(284, 262);
-			this.Controls.Add(this.Euler4Button);
-			this.Controls.Add(this.TimingLabel);
-			this.Controls.Add(this.ResultLabel);
-			this.Controls.Add(this.Euler3Button);
-			this.Name = "Form1";
-			this.Text = "Form1";
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.ResultLabel = new System.Windows.Forms.Label();
+            this.TimingLabel = new System.Windows.Forms.Label();
+            this.RunButton = new System.Windows.Forms.Button();
+            this.RunComboBox = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // ResultLabel
+            // 
+            this.ResultLabel.AutoSize = true;
+            this.ResultLabel.Location = new System.Drawing.Point(161, 52);
+            this.ResultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ResultLabel.Name = "ResultLabel";
+            this.ResultLabel.Size = new System.Drawing.Size(59, 17);
+            this.ResultLabel.TabIndex = 1;
+            this.ResultLabel.Text = "Results:";
+            // 
+            // TimingLabel
+            // 
+            this.TimingLabel.AutoSize = true;
+            this.TimingLabel.Location = new System.Drawing.Point(161, 79);
+            this.TimingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TimingLabel.Name = "TimingLabel";
+            this.TimingLabel.Size = new System.Drawing.Size(54, 17);
+            this.TimingLabel.TabIndex = 2;
+            this.TimingLabel.Text = "Timing:";
+            // 
+            // RunButton
+            // 
+            this.RunButton.Location = new System.Drawing.Point(164, 10);
+            this.RunButton.Margin = new System.Windows.Forms.Padding(4);
+            this.RunButton.Name = "RunButton";
+            this.RunButton.Size = new System.Drawing.Size(100, 28);
+            this.RunButton.TabIndex = 4;
+            this.RunButton.Text = "Run";
+            this.RunButton.UseVisualStyleBackColor = true;
+            this.RunButton.Click += new System.EventHandler(this.RunButton_Click);
+            // 
+            // RunComboBox
+            // 
+            this.RunComboBox.FormattingEnabled = true;
+            this.RunComboBox.Location = new System.Drawing.Point(13, 13);
+            this.RunComboBox.Name = "RunComboBox";
+            this.RunComboBox.Size = new System.Drawing.Size(121, 24);
+            this.RunComboBox.TabIndex = 5;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(379, 322);
+            this.Controls.Add(this.RunComboBox);
+            this.Controls.Add(this.RunButton);
+            this.Controls.Add(this.TimingLabel);
+            this.Controls.Add(this.ResultLabel);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Euler3Button;
         private System.Windows.Forms.Label ResultLabel;
-		private System.Windows.Forms.Label TimingLabel;
-		private System.Windows.Forms.Button Euler4Button;
+        private System.Windows.Forms.Label TimingLabel;
+        private System.Windows.Forms.Button RunButton;
+        private System.Windows.Forms.ComboBox RunComboBox;
     }
 }
 
