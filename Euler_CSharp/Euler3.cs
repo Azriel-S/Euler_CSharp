@@ -5,19 +5,19 @@ using System.Text;
 
 namespace Euler_CSharp
 {
-    class Euler3
-    {
+	class Euler3
+	{
 		private System.Collections.Generic.List<Int64> m_primes;
 
-        public Euler3()
-        {
+		public Euler3()
+		{
 			m_primes = new List<Int64>();
 			m_primes.Add(2);
 			m_primes.Add(3);
-        }
+		}
 
 		public void FindNPrimes(Int64 largestPrime)
-        {
+		{
 			if (largestPrime <= 3)
 				return;
 			else {
@@ -30,7 +30,7 @@ namespace Euler_CSharp
 					m_primes.Add(currentNum);
 				}
 			}
-        }
+		}
 
 		public List<Int64> FindDivisors(Int64 num)
 		{
@@ -48,5 +48,5 @@ namespace Euler_CSharp
 
 			return divisors;
 		}
-    }
+	}
 }
