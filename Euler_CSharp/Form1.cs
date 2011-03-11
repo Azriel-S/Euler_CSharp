@@ -19,9 +19,8 @@ namespace Euler_CSharp
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			RunComboBox.Items.Clear();
-            RunComboBox.Items.Add(1);
-			RunComboBox.Items.Add(3);
-			RunComboBox.Items.Add(4);
+            for (int i = 1; i < 5;++i )
+                RunComboBox.Items.Add(i);
 		}
 
 		private void RunButton_Click(object sender, EventArgs e)
@@ -40,6 +39,10 @@ namespace Euler_CSharp
 			{
                 case 1:
                     result = Euler1();
+                    break;
+
+                case 2:
+                    result = Euler2();
                     break;
 
 				case 3:
@@ -63,6 +66,12 @@ namespace Euler_CSharp
             return e1.FindNaturalNumbers().ToString();
         }
 
+        private string Euler2()
+        {
+            Euler2 e2 = new Euler2();
+
+            return e2.SumEvens(4000000).ToString();
+        }
         private string Euler3()
         {
             Int64 num = 600851475143;
