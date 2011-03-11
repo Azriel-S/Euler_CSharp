@@ -16,29 +16,10 @@ namespace Euler_CSharp
 			InitializeComponent();
 		}
 
-		private void Euler3()
-		{
-			Int64 num = 600851475143;
-			Int64 numSq = (Int64)Math.Sqrt((double)num);
-
-			Euler3 e3 = new Euler3();
-			e3.FindNPrimes(numSq);
-			List<Int64> results = e3.FindDivisors(num);
-
-			ResultLabel.Text = "Results:  " + results[results.Count - 1].ToString();
-		}
-
-		private void Euler4(){
-			int val1, val2;
-			Euler4Class e4 = new Euler4Class();
-			int result = e4.FindPalidromes(3, out val1, out val2);
-			
-			ResultLabel.Text = "Results:  " + result.ToString();
-		}
-
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			RunComboBox.Items.Clear();
+            RunComboBox.Items.Add(1);
 			RunComboBox.Items.Add(3);
 			RunComboBox.Items.Add(4);
 		}
@@ -54,20 +35,56 @@ namespace Euler_CSharp
 		{
 			int startTime = Environment.TickCount;
 
+            string result =String.Empty;
 			switch (index)
 			{
+                case 1:
+                    result = Euler1();
+                    break;
+
 				case 3:
-					Euler3();
+					result=Euler3();
 					break;
 
 				case 4:
-					Euler4();
+					result = Euler4();
 					break;
 			}
 
+            ResultLabel.Text = "Results:  " + result;
 			int endTime = Environment.TickCount;
 			TimingLabel.Text = "Timing:  " + (endTime - startTime).ToString();
 		}
+
+        private string Euler1()
+        {
+            Euler1 e1 = new Euler1();
+
+            return e1.FindNaturalNumbers().ToString();
+        }
+
+        private string Euler3()
+        {
+            Int64 num = 600851475143;
+            Int64 numSq = (Int64)Math.Sqrt((double)num);
+
+            Euler3 e3 = new Euler3();
+            e3.FindNPrimes(numSq);
+            List<Int64> results = e3.FindDivisors(num);
+
+            return results[results.Count - 1].ToString();
+        }
+
+        private string Euler4()
+        {
+            int val1, val2;
+            Euler4Class e4 = new Euler4Class();
+            int result = e4.FindPalidromes(3, out val1, out val2);
+
+            return result.ToString();
+        }
+
+        
 	}
 }
 
