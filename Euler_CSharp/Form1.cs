@@ -78,7 +78,7 @@ namespace Euler_CSharp
         private string Euler4()
         {
             int val1, val2;
-            Euler4Class e4 = new Euler4Class();
+            Euler4 e4 = new Euler4();
             int result = e4.FindPalidromes(3, out val1, out val2);
 
             return result.ToString();
