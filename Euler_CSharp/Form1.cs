@@ -16,10 +16,11 @@ namespace Euler_CSharp
 			InitializeComponent();
 		}
 
+        private int maxTest = 6;
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			RunComboBox.Items.Clear();
-            for (int i = 1; i < 7;++i )
+            for (int i = 1; i <= maxTest; ++i )
                 RunComboBox.Items.Add(i);
 		}
 
@@ -52,6 +53,10 @@ namespace Euler_CSharp
 				case 4:
 					result = Euler4();
 					break;
+
+                case 5:
+                    result = Euler5();
+                    break;
 
                 case 6:
                     result = Euler6();
@@ -97,6 +102,13 @@ namespace Euler_CSharp
             return result.ToString();
         }
 
+        private string Euler5()
+        {
+            Euler5 e5 = new Euler5();
+            int result = e5.FindEvenlyDivisible(20);
+
+            return result.ToString();
+        }
         private string Euler6()
         {
             Euler6Class e6 = new Euler6Class();
