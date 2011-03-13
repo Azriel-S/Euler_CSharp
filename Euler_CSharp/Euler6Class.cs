@@ -12,7 +12,7 @@ namespace Euler_CSharp
             Int64 square = MathFuncs.SquareOfTheSums(maxNum);
             Int64 sum = MathFuncs.SumOfTheSquares(maxNum);
 
-            return sum - square;
+            return square - sum;
         }
 
     }
