@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Euler_CSharp
+namespace Euler_Library
 {
-	class Euler4
+	public class Euler4
 	{
 		public int FindPalidromes(int sizeNum, out int val1, out int val2)
 		{

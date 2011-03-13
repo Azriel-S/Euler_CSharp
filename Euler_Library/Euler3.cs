@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Euler_CSharp
+namespace Euler_Library
 {
-	class Euler3
+	public class Euler3
 	{
 		private System.Collections.Generic.List<Int64> m_primes;
 

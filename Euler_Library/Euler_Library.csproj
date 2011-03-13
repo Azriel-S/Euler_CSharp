@@ -46,6 +46,7 @@
     <Compile Include="Euler4.cs" />
     <Compile Include="Euler5.cs" />
     <Compile Include="Euler6Class.cs" />
+    <Compile Include="MathFuncs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

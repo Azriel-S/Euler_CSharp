@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Euler_CSharp
+namespace Euler_Library
 {
-    class Euler5
+    public class Euler5
     {
         public int FindEvenlyDivisible(int maxNumber)
         {

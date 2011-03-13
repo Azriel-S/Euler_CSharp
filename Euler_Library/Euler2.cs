@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Collections;
 
-namespace Euler_CSharp
+namespace Euler_Library
 {
-    class Euler2
+    public class Euler2
     {
         public long SumEvens(int maxVal)
         {
