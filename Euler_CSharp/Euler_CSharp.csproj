@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Euler1.cs" />
-    <Compile Include="Euler2.cs" />
-    <Compile Include="Euler3.cs" />
-    <Compile Include="Euler4.cs" />
-    <Compile Include="Euler5.cs" />
-    <Compile Include="Euler6Class.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +76,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Euler_Library\Euler_Library.csproj">
+      <Project>{B4E58B9C-3D44-4156-9DAF-C2038A82EB4C}</Project>
+      <Name>Euler_Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
