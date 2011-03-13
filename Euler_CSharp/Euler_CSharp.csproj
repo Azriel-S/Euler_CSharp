@@ -50,12 +50,14 @@
     <Compile Include="Euler2.cs" />
     <Compile Include="Euler3.cs" />
     <Compile Include="Euler4.cs" />
+    <Compile Include="Euler6Class.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MathFuncs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

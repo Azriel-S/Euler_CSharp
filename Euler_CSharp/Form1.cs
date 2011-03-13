@@ -19,7 +19,7 @@ namespace Euler_CSharp
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			RunComboBox.Items.Clear();
-            for (int i = 1; i < 5;++i )
+            for (int i = 1; i < 7;++i )
                 RunComboBox.Items.Add(i);
 		}
 
@@ -52,6 +52,10 @@ namespace Euler_CSharp
 				case 4:
 					result = Euler4();
 					break;
+
+                case 6:
+                    result = Euler6();
+                    break;
 			}
 
             ResultLabel.Text = "Results:  " + result;
@@ -93,7 +97,13 @@ namespace Euler_CSharp
             return result.ToString();
         }
 
-        
+        private string Euler6()
+        {
+            Euler6Class e6 = new Euler6Class();
+            Int64 result = e6.DiffOfSquares(100);
+
+            return result.ToString();
+        }
 	}
 }
 
