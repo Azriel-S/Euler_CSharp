@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Euler_Library
 {
-    public class Euler6Class
+    public class Euler6
     {
         public Int64 DiffOfSquares(int maxNum)
         {

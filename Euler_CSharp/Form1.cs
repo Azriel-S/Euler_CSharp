@@ -114,7 +114,7 @@ namespace Euler_CSharp
         }
         private string Euler6()
         {
-            Euler6Class e6 = new Euler6Class();
+            Euler6 e6 = new Euler6();
             Int64 result = e6.DiffOfSquares(100);
 
             return result.ToString();
