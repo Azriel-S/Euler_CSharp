@@ -101,7 +101,7 @@ namespace Euler_CSharp
         private string Euler5()
         {
             Euler5 e5 = new Euler5();
-            int result = e5.FindEvenlyDivisible(10);
+            int result = e5.FindEvenlyDivisible(20);
 
             return result.ToString();
         }

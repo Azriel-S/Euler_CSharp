@@ -9,14 +9,14 @@ namespace Euler_CSharp
     {
         public int FindEvenlyDivisible(int maxNumber)
         {
-            int largestNum = 1;
+            Int64 largestNum = 1;
             for (int i = 2; i <= maxNumber; ++i)
                 largestNum *= i;
 
             int j = 2;
             while (j <= maxNumber)
             {
-                int currentNum = largestNum / j;
+                Int64 currentNum = largestNum / j;
 
                 if (IsDivisible(maxNumber, currentNum))
                     largestNum = currentNum;
@@ -24,10 +24,10 @@ namespace Euler_CSharp
                     j++;
             }
 
-            return largestNum;
+            return (int)largestNum;
         }
 
-        private bool IsDivisible(int maxNumber, int largestNum)
+        private bool IsDivisible(int maxNumber, Int64 largestNum)
         {
             for (int i = 2; i <= maxNumber; ++i)
             {
