@@ -26,14 +26,16 @@ namespace Euler_CSharp
 
 		private void RunButton_Click(object sender, EventArgs e)
 		{
-			int index;
-			if (Int32.TryParse(RunComboBox.Text, out index))
-				RunEuler(index);
+			RunEuler();
 		}
 
-		private void RunEuler(int index)
+		private void RunEuler()
 		{
 			int startTime = Environment.TickCount;
+
+            int index;
+            if (!Int32.TryParse(RunComboBox.Text, out index))
+                return;
 
             string result =String.Empty;
 			switch (index)
@@ -115,6 +117,11 @@ namespace Euler_CSharp
             Int64 result = e6.DiffOfSquares(100);
 
             return result.ToString();
+        }
+
+        private void RunComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RunEuler();
         }
 	}
 }

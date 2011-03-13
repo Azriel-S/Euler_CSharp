@@ -71,6 +71,7 @@
             this.RunComboBox.Name = "RunComboBox";
             this.RunComboBox.Size = new System.Drawing.Size(121, 24);
             this.RunComboBox.TabIndex = 5;
+            this.RunComboBox.SelectedIndexChanged += new System.EventHandler(this.RunComboBox_SelectedIndexChanged);
             // 
             // Form1
             // 
