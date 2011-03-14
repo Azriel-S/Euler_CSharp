@@ -7,9 +7,9 @@ namespace Euler_Library
 {
     public class Euler1
     {
-        public long FindNaturalNumbers()
+        public int FindNaturalNumbers()
         {
-            long total = 0;
+            int total = 0;
             for (int i = 3; i < 1000; ++i)
             {
                 if (i % 3 == 0)
