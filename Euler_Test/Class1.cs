@@ -18,5 +18,14 @@ namespace Euler_Test
             int result = e1.FindNaturalNumbers();
             Assert.That(result, Is.EqualTo(233168));
         }
+
+        [Test]
+        public void Euler9_Test()
+        {
+            Euler9 e9 = new Euler9();
+
+            int result = e9.Pythag_Triplet(1000);
+            Assert.That(result, Is.EqualTo(31875000));
+        }
     }
 }

@@ -17,7 +17,7 @@ namespace Euler_CSharp
 			InitializeComponent();
 		}
 
-        private int maxTest = 6;
+        private int maxTest = 9;
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			RunComboBox.Items.Clear();
@@ -63,6 +63,10 @@ namespace Euler_CSharp
 
                 case 6:
                     result = Euler6();
+                    break;
+
+                case 9:
+                    result = Euler9();
                     break;
 			}
 
@@ -112,10 +116,19 @@ namespace Euler_CSharp
 
             return result.ToString();
         }
+
         private string Euler6()
         {
             Euler6 e6 = new Euler6();
             Int64 result = e6.DiffOfSquares(100);
+
+            return result.ToString();
+        }
+
+        private string Euler9()
+        {
+            Euler9 e9 = new Euler9();
+            int result = e9.Pythag_Triplet(1000);
 
             return result.ToString();
         }
